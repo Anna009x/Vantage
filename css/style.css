@@ -26,6 +26,7 @@ header {
     display: flex;
 }
 
+
 .header-logo-block {
     width: 326.0px;
     height: 136.0px;
@@ -33,6 +34,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .header-img {
@@ -43,12 +45,18 @@ header {
 .header-list {
     display: flex;
     gap: 3px;
+    margin-left: 34px;
+    margin-bottom: 0;
+    height: 68.0px;align-items: center;
+    margin-top: 0;
 }
 
 .header-list2 {
     display: flex;
     gap: 37px;
     margin-left: 266px;
+    margin-bottom: 0;
+    height: 33.0px;
     
 }
 .header-article {
@@ -81,19 +89,36 @@ header {
 
 .section-hero {
     background-color: var(--color-black);
+    height: 659.0px;
+    position: relative;
+    bottom: 68px;
 }
 
 .hero-wrap {
     background-image: url(/images/interier-bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 659.0px;
 }
 
 .hero-block {
     background-color: var(--color-white);
     padding: 67px 67.98px 68.09px 68.02px;
     width: 584.0px;
-    /* height: 455.0px; */
+    position: relative;
+    left: 652px;
+    top: 68px;
+    z-index: 3;
+}
+
+.hero-accent-block {
+    width: 489.0px;
+    height: 329.0px;
+    background-color: var(--color-accent);
+    position: absolute;
+    bottom: 0;
+    right: 68px;
+    z-index: 1;
 }
 
 .hero-subtitle {
@@ -142,13 +167,19 @@ header {
     line-height: 17.85px;
     letter-spacing: 2.975px;
     text-transform: uppercase;
-   width: 216.0px;
+    width: 216.0px;
     height: 68.0px;
     border: none;
+    cursor: pointer;
 }
 
 .hero-list2 {
     background-color: var(--color-grey);
+    display: flex;
+    gap: 36px;
+    position: relative;
+    bottom: -105px;
+    margin-bottom: 0;
 }
 
 .hero-link {
@@ -159,4 +190,99 @@ header {
     line-height: 68px;
     letter-spacing: 2.975px;
     text-transform: uppercase;
+}
+
+.section-about {
+    background-color: var(--color-grey);
+    padding-top: 136px;
+    position: relative;
+    bottom: 70px;
+    height: 872.0px;
+}
+
+.about-subtitle {
+    color: var(--color-accent);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.575px;
+    letter-spacing: 2.763px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.about-title {
+    font-family: "Teko";
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52.955px;
+    text-transform: capitalize;
+    width: 688.0px;
+    margin-bottom: 28px;
+}
+
+.about-text {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.5px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.about-date-text {
+    color: var(--color-accent);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.575px;
+    letter-spacing: 2.763px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    margin-top: 0;
+}
+
+.about-text-information {
+    font-family: "Teko";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.112px;
+    text-transform: capitalize;
+    width: 339.0px;
+    margin-top: 0;
+}
+
+.about-numbers-text {
+    text-align: center;
+    font-family: "Teko";
+    font-size: 59px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.65px;
+}
+
+.about-first-block {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-second-block {
+    display: flex;
+    flex-direction: column;
+    width: 820.0px;
+}
+
+.about-third-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-list2 {
+    display: flex;
+    justify-content: space-between;
 }
