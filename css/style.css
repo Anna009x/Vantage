@@ -5,6 +5,7 @@
 --background-color:#EBEBEB;
 --color-dark-grey:#3D3D3D;
 --color-grey:#EBEBEB;
+--color-decoration:#222;
 }
 
 body {
@@ -264,6 +265,12 @@ header {
     line-height: 58.65px;
 }
 
+.about-decoration-text {
+    background-color: var(--color-accent);
+    width: 9.0px;
+    height: 9.0px;
+}
+
 .about-first-block {
     display: flex;
     gap: 40px;
@@ -285,4 +292,132 @@ header {
 .about-list2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.block-about-projects {
+    position: relative;
+}
+
+.section-projects {
+    height: 200px;
+}
+
+.projects-wrap {
+    position: relative;
+    bottom: 200px;
+}
+
+.projects-list {
+    display: flex;
+    gap: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projects-item {
+    position: relative;
+}
+
+.projects-img {
+    width: 412.0px;
+    height: 342.3px;
+}
+
+.projects-first-block {
+    width: 103.0px;
+    height: 34.0px;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.projects-first-block-text {
+    color: var(--color-white);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.32px;
+    letter-spacing: 2.72px;
+    text-transform: uppercase;
+}
+
+.projects-second-block {
+    width: 206.0px;
+    height: 102.0px;
+    background-color: var(--color-accent);
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    cursor: pointer;
+}
+
+.projects-second-block-text {
+    color: var(--color-white);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 2.763px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projects-third-block {
+    width: 378.0px;
+    height: 68.0px;
+    background-color: var(--color-black);
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.projects-third-block-text {
+    color: var(--color-white);
+    text-align: center;
+    font-family: "Teko";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.112px;
+    text-transform: capitalize;
+}
+
+.services-article {
+    color: var(--color-accent);
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.575px;
+    letter-spacing: 2.763px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.services-title {
+    color: var(--color-black);
+    text-align: center;
+    font-family: "Teko";
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52.955px;
+    text-transform: capitalize;
+    width: 801.0px;
+}
+
+.services-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
