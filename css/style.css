@@ -414,10 +414,73 @@ header {
     line-height: 52.955px;
     text-transform: capitalize;
     width: 801.0px;
+    margin-bottom: 81px;
 }
 
 .services-wrap {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.services-list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.services-item {
+  flex: 0 0 calc((100% - 2px) / 3);
+}
+
+.services-icon {
+    width: 68.0px;
+    height: 68.0px;
+    fill: var(--color-accent);
+}
+
+.services-data {
+    color: var(--color-accent);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.575px;
+    letter-spacing: 2.763px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.services-subtitle {
+    font-family: "Teko";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.112px;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 27px;
+}
+
+.services-text {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.5px;
+    margin: 0;
+}
+
+.services-btn {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.85px;
+    letter-spacing: 2.975px;
+    text-transform: uppercase;
+    padding: 25px 118px 25px 121px;
+    border: none;
 }
