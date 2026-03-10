@@ -511,3 +511,16 @@ header {
     border: none;
     margin-top: 90px;
 }
+
+
+.logo-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block-logo-section {
+    width: 9.0px;
+    height: 9.0px;
+    background-color: var(--color-accent);
+}
